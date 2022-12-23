@@ -1,11 +1,10 @@
-package com.newproject;
+package com.sojoproj;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-import android.text.TextUtils;
-import android.os.Bundle;
+
 import com.google.firebase.messaging.RemoteMessage;
 import com.pushio.manager.PushIOManager;
 import io.invertase.firebase.app.ReactNativeFirebaseApp;

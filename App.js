@@ -32,7 +32,7 @@ function MyStack() {
 export default function App() {
 
     //Responsys
-    PushIOManager.configure("your-pushio_config.json", (error, response) => {
+    PushIOManager.configure("pushio_config.json", (error, response) => {
 
     });
 
@@ -49,6 +49,7 @@ export default function App() {
           });
   }
 
+/*
   PushIOManager.fetchMessagesForMessageCenter("Primary", (error, response) => {
 
   });
@@ -56,6 +57,7 @@ export default function App() {
   PushIOManager.fetchRichContentForMessage("ABE_qBPwpFLE4Aw_7lStX6SBu0bBwtzEKUf--gqKtsZeCoaQvHPaQaHZDVELmiiov69wuIdO91iCgtBc12vjZnTnYivkshzihCerwFs3jyDVcvA84Bw7ZiFg", (error, response) => {
     	      // 'response' is the HTML content
   });
+  */
 
   //multiple push SDK
   /*

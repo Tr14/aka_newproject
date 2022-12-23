@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "994788729406",
-    "project_id": "sojo-proj",
-    "storage_bucket": "sojo-proj.appspot.com"
+    "project_number": "269668942037",
+    "project_id": "sojo-proj-9f8f5",
+    "storage_bucket": "sojo-proj-9f8f5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:994788729406:android:01466cc47d5290e8c9276f",
+        "mobilesdk_app_id": "1:269668942037:android:6794241f387c6200cee25c",
         "android_client_info": {
-          "package_name": "com.newproject"
+          "package_name": "com.sojoproj"
         }
       },
       "oauth_client": [
         {
-          "client_id": "994788729406-57ruqmg2bs5nf1qsnfqf9mvhpui2vdg2.apps.googleusercontent.com",
+          "client_id": "269668942037-c6rboc227mdn9rrts6ihe9sle1vukvp2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCIFCMq5PlV3iiBkeoa8BNIR72mxtNetEg"
+          "current_key": "AIzaSyCS6ux1sMHXM_vWuG7ZA-DDguyJEHPnBkM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "994788729406-57ruqmg2bs5nf1qsnfqf9mvhpui2vdg2.apps.googleusercontent.com",
+              "client_id": "269668942037-c6rboc227mdn9rrts6ihe9sle1vukvp2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
