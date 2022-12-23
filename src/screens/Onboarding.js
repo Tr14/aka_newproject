@@ -31,7 +31,12 @@ const Onboarding = ({navigation}) => {
                     >
                         <Text style={{fontSize:15,letterSpacing:1.5,textAlign:'center',position:'relative',fontFamily:'OpenSans-SemiBold',color:Colors.white}} >Get Started</Text>
                     </TouchableOpacity> */}
-                    <Buttons btn_text={"Go to Login"} on_press={()=>navigation.navigate("Login")} />
+                    <Buttons
+                        btn_text={"Go to Login"}
+                        on_press={()=>{
+                            navigation.navigate("Login")
+                        }}
+                    />
                 </View>
             </View>
         </View>
