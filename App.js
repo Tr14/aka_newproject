@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {View,Text} from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,6 +8,7 @@ import { Platform, Linking } from 'react-native';
 import linking from "./linking";
 
 import PushIOManager from '@oracle/react-native-pushiomanager';
+import messaging from '@react-native-firebase/messaging';
 
 const Stack = createNativeStackNavigator();
 const App = ()=>{
@@ -18,6 +19,23 @@ const App = ()=>{
 
   PushIOManager.setNotificationLargeIcon("android/app/src/main/res/drawable/icon.png");
   PushIOManager.setNotificationSmallIcon("android/app/src/main/res/drawable/icon.png");
+
+  messaging().onMessage(async remoteMessage => {
+
+          console.log('New FCM message received:',
+          JSON.stringify(remoteMessage));
+
+          PushIOManager.isResponsysPush(remoteMessage, (error, response) => {
+
+              if (response) {
+                  console.log("Received Push Message from Responsys");
+                  PushIOManager.handleMessage(remoteMessage);
+              } else {
+                  console.log("Not a Responsys Push, handle it appropriately");
+                  alert('FCM:'+JSON.stringify(remoteMessage));
+              }
+          });
+  });
 
   return (
           <NavigationContainer linking={linking}>
